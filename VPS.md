@@ -22,3 +22,16 @@ netstat -ntlp
 #如果netstat没有安装，则需要先安装
 yum install net-tools
 ```
+##防火墙设置
+有可能仍然出现不能连接网络的情况，可能是由于防火墙设置的原因，因此需要让防火墙开房相应的端口。
+我的服务器端操作系统是CentOS 7，因此使用firewall相关命令来开启相应端口。
+```shell
+#开启8989端口
+firewall-cmd --zone=public --add-port=8989/tcp --permanent
+firewall-cmd --zone=public --add-port=8989/udp --permanent
+#重启防火墙服务
+systemctl restart firewalld.service
+#查看防火墙端口开启情况
+firewall-cmd --list-ports
+```
+如果显示8989/tcp和8989/udp，说明防火墙设置成功。
