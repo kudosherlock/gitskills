@@ -35,3 +35,5 @@ systemctl restart firewalld.service
 firewall-cmd --list-ports
 ```
 如果显示8989/tcp和8989/udp，说明防火墙设置成功。
+其他有关防火墙内容可参考教程
+[CentOS7防火墙](https://blog.csdn.net/zll_0405/article/details/81208606 "CentOS7防火墙")
