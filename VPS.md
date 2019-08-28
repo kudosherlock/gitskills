@@ -22,6 +22,7 @@ netstat -ntlp
 #如果netstat没有安装，则需要先安装
 yum install net-tools
 ```
+配置成功后，可以通过[在线端口检测](http://coolaf.com/tool/port "在线端口检测")来检测端口是否开放成功。
 ##防火墙设置
 有可能仍然出现不能连接网络的情况，可能是由于防火墙设置的原因，因此需要让防火墙开房相应的端口。
 我的服务器端操作系统是CentOS 7，因此使用firewall相关命令来开启相应端口。
