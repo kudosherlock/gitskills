@@ -44,3 +44,5 @@ firewall-cmd --list-ports
 ```shell
 nc -lp 8080 &
 ```
+
+再次尝试的时候发现两者都失败了，然后换成了[V2ray](https://tlanyan.me/v2ray-tutorial/)效果拔群，一键脚本省心省力！
